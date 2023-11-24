@@ -82,8 +82,6 @@
 					$('#location').val("");
 					return false;
 				}else{
-					console.log(object);
-				
 					const options = { day: 'numeric', month: 'short', year: 'numeric' };
 					let date = new Date(object.list[0].dt * 1000).toLocaleDateString('en-US', options);
 					let temp = Math.round(object.list[0].main.temp - 273.15);
