@@ -22,7 +22,7 @@
                     <img class="image mt-5" src="https://i.imgur.com/M8VyA2h.png">
                 </div>
                 <div class="row px-3 mt-3 mb-3">
-                    <h1 class="large-font mr-3" id ="temp">26&#176;</h1>
+                    <h1 class="large-font mr-3" id ="temp">26°</h1>
                     <div class="d-flex flex-column mr-3">
                         <h2 class="mt-3 mb-0" id="city">London</h2>
                         <p id="date">10:36 - Tuesday, 22 Oct '19</p>
@@ -91,7 +91,7 @@
 					let weather = object.list[0].weather[0].main;
 					
 					$("#city").text(city);
-					$("#temp").text(temp);
+					$("#temp").text(temp+"°");
 					$("#date").text(date);
 					$("#humidity").text(humidity+"%");
 					
